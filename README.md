@@ -73,18 +73,6 @@ This will open the application in your default browser at http://localhost:4200/
 2. **Build the project for production:**
    ```ng build --prod```
 ---
-##Contributing
-**Contributions are welcome! To contribute:**
-
-Fork the repository.
-Create a new branch:
-```git checkout -b feature/your-feature-name```
-Commit your changes:
-```git commit -m "Add your message here"```
-Push to the branch:
-```git push origin feature/your-feature-name```
-Open a pull request.
----
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 ---
