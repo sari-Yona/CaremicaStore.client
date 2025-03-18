@@ -1,0 +1,44 @@
+<div class="container mt-5">
+  <form (ngSubmit)="onRegister()" #myForm="ngForm" class="shadow p-4 rounded bg-light">
+    <div class="form-group">
+      <label for="userName">User Name:</label>
+      <input type="text" class="form-control" id="userName" [(ngModel)]="newCustomer.customerName" name="userName"
+        required #userName="ngModel" pattern="^[a-zA-Zא-ת\s]+$">
+      @if(userName.invalid &&(userName.touched || userName.dirty))
+      {
+      <p [hidden]="!userName.errors!['required']" class="text-danger">Required Field</p>
+      <p [hidden]="!userName.errors!['pattern']" class="text-danger">Letters Only</p>}
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" [(ngModel)]="newCustomer.email" name="email" required
+        #mail="ngModel" pattern="[A-Za-z.0-9]+@(gmail.com|co.il|net)">
+      @if(mail.invalid &&(mail.touched || mail.dirty))
+      {
+      <p [hidden]="!mail.errors!['required']" class="text-danger">Required Field</p>
+      <p [hidden]="!mail.errors!['pattern']" class="text-danger">Invalid Mail</p>}
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="text" class="form-control" id="phone" [(ngModel)]="newCustomer.phone" name="phone" required
+        #phone="ngModel" pattern="^(05[0-9]{8}|0[2-9][0-9]{7}|[0-9]{2,3}-[0-9]{7})$">
+      @if(phone.invalid &&(phone.touched || phone.dirty))
+      {
+      <p [hidden]="!phone.errors!['required']" class="text-danger">Required Field</p>
+      <p [hidden]="!phone.errors!['pattern']" class="text-danger">Invalid Phone</p>}
+    </div>
+
+    <div class="form-group">
+      <label for="dateBirth">Date Birth:</label>
+      <input type="date" class="form-control" id="dateBirth" [(ngModel)]="newCustomer.dateBirth" name="dateBirth"
+        #date="ngModel" required [max]="today">
+      @if(date.invalid && (date.touched || date.dirty)){
+      <p [hidden]="!date.errors!['required']" class="text-danger">Required Field</p>
+      <p [hidden]="!date.errors!['max']" class="text-danger">Date must be in the past</p>}
+    </div>
+
+    <button style="background-color: #A86B4D; border-color:  #A86B4D;"  type="submit" class="btn btn-primary" [disabled]="!myForm.valid">Register</button>
+  </form>
+</div>

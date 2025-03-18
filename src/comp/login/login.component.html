@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <form (ngSubmit)="onLogin()" #myForm="ngForm" class="shadow p-4 rounded bg-light">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" [(ngModel)]="customer.email" name="email" required
+        #mail="ngModel" pattern="[A-Za-z.0-9]+@(gmail.com|co.il|net)">
+      @if(mail.invalid &&(mail.touched || mail.dirty))
+      {
+      <p [hidden]="!mail.errors!['required']" class="text-danger">Required Field</p>
+      <p [hidden]="!mail.errors!['pattern']" class="text-danger">Invalid Mail</p>}
+    </div>
+    <div class="form-group">
+      <label for="userName">User Name:</label>
+      <input type="text" class="form-control" id="userName" [(ngModel)]="customer.customerName" name="userName" required
+        #userName="ngModel" pattern="^[a-zA-Zא-ת\s]+$">
+      @if(userName.invalid &&(userName.touched || userName.dirty))
+      {
+      <p [hidden]="!userName.errors!['required']" class="text-danger">Required Field</p>
+      <p [hidden]="!userName.errors!['pattern']" class="text-danger">Letters Only</p>}
+    </div>
+    <button type="submit" class="btn btn-secondary btn-block mt-2">Log In</button>
+    <app-button text="Sign In" icon="fa-solid fa-arrow-alt-circle-down" css="btn btn-secondary btn-block mt-2" (event)="clickBtn($event)"></app-button>
+  </form>
+</div>

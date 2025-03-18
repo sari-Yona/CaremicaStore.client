@@ -1,0 +1,44 @@
+.container {
+    max-width: 500px;
+}
+  
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #5B3A29; /* גוני בז חום */
+}
+  
+.form-control {
+    transition: all 0.3s ease;
+    background-color: #F5E7D7; /* שמנת */
+}
+  
+.form-control:focus {
+    border-color: #C19A6B; /* גוני בז חום */
+    box-shadow: 0 0 5px rgba(193, 154, 107, 0.5);
+}
+  
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btn33{
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: #A86B4D; /* גוני בז חום */
+    transform: translateY(-2px);
+}
+#btn33:hover{
+    background-color: #A86B4D; /* גוני בז חום */
+    transform: translateY(-2px);
+
+}
+  
+.btn:active {
+    transform: translateY(0);
+}
+
+#btn33:active{
+    transform: translateY(0);
+}

@@ -1,0 +1,110 @@
+.footer {
+    background-color: #d8c8b0; /* צבע בז' */
+    color: #222; /* צבע שחור */
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.footer:hover {
+    background-color: #b29a7c; /* צבע חום כהה בהנחה */
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact-list li {
+    margin: 10px 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #54595f; /* צבע אפור כהה */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #222; /* צבע שחור בהנחה */
+}
+
+.footer-social-icons {
+    margin-top: 15px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #222; /* צבע שחור */
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* תזוזה בהנחה */
+}
+
+
+
+.bg-gradient {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(245,222,179,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.hover-effect {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  color: #f5deb3; /* בז' שמנת */
+  transform: scale(1.1);
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem; /* גודל גופן גדול יותר */
+  font-weight: bold;
+  color: #f5deb3; /* בז' שמנת */
+  letter-spacing: 1px; /* רווח בין האותיות */
+  padding: 15px; /* רווח פנימי */
+}
+
+.nav-link:hover {
+  color: #ffffff; /* צבע לבן להדגשה */
+}
+
+
+
+.navbar-nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* מיישר את האלמנטים במרכז גובה */
+  width: 100%; /* לוודא שהניווט תופס את כל רוחב הדף */
+}
+
+
+/* ////// */
+/* הגדרת פונט גלובלי לכל האתר */
+body {
+  font-family: 'Roboto', sans-serif; /* ניתן לשנות לפונט אחר */
+  font-size: 16px; /* גודל ברירת מחדל */
+  line-height: 1.5; /* מרווח בין השורות */
+  color: #333; /* צבע טקסט ברירת מחדל */
+}
+
+/* לדוגמה, אם אתה רוצה להוסיף פונט מ-Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* שאר הסגנונות שלך */
+
+/* שאר הקוד שלך */
+
+
+
+

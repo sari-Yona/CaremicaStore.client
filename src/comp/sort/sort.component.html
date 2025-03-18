@@ -1,0 +1,21 @@
+<div class="sort-component card p-3">
+    <h5 class="card-title">Sort Products</h5>
+  
+    <div class="mb-3">
+      <label for="sort-by" class="form-label">Sort By:</label>
+      <select id="sort-by" class="form-select" [(ngModel)]="sortBy" (change)="onSortChange()">
+        <option value="price">Price</option>
+        <option value="category">Category</option>
+        <option value="company">Company</option>
+      </select>
+    </div>
+  
+    <div class="mb-3">
+      <label for="order" class="form-label">Order:</label>
+      <select id="order" class="form-select" [(ngModel)]="order" (change)="onSortChange()">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+      </select>
+    </div>
+  </div>
+  

@@ -1,0 +1,51 @@
+.container {
+    background-color: #ffffff;
+    color: #8b4513; /* Brown */
+    font-family: 'Arial', sans-serif;
+    margin: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s;
+}
+
+.sec-description {
+    border: 2px solid #8b4513; /* Brown */
+    border-radius: 10px;
+    background-color: #fff; /* Cream */
+    animation: fadeInUp 1s;
+}
+
+blockquote {
+    border-left: 5px solid #8b4513; /* Brown */
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    animation: fadeInUp 1s;
+}
+
+.fb-copyright-note {
+    text-align: center;
+    font-size: 0.9em;
+    color: #8b4513; /* Brown */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

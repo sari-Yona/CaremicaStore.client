@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <button id="btns" (click)="openFilter()" class="fa-solid fa-filter btn btn-lg btn-dark mt-3">
+    {{ isFilter ? 'close    filter options' : 'open    filter options' }}
+</button>
+@if(isFilter) {
+    <app-filter></app-filter>
+}
+<button id="btns" (click)="openSort()" class="fa-solid fa-sort btn btn-lg btn-dark mt-3">
+    {{ isSort ? 'close    sort options' : 'open    sort options' }}
+</button>
+
+    @if(isSort) {
+    <app-sort></app-sort>}
+    
+    <div class="row mt-4">
+        @for(product of this.p.allP; track product.id) {
+        <div class="col-md-4 mb-3">
+            <div class="card border-light shadow-sm transition-all duration-300">
+                <img [src]="product.picture+'.jpg'" class="card-img-top" alt="{{ product.nameProduct }}" />
+                <div class="card-body" [ngClass]="product.quantity!>0 ? 'in-stock' : 'out-of-stock'">
+                    <h5 class="card-title text-center text-dark">{{ product.nameProduct }}</h5>
+                    <p class="card-text text-muted">{{ product.description }}</p>
+                    <app-button text="Additional Information" icon="fa-solid fa-angle-double-right" css="btn btn-lg btn-dark mt-3" (event)="moreDet(product.id!,$event)"></app-button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>

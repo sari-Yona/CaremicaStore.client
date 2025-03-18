@@ -1,0 +1,57 @@
+.container {
+    background-color: #F5F5F5; /* צבע רקע בהיר */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #5B3A29; /* גוני בז חום */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #C19A6B; /* גוני בז חום */
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #A57C4D; /* גוון כהה יותר בעת ריכוז */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: #4A4A4A; /* צבע כהה יותר */
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+h4 {
+    color: #5B3A29; /* גוני בז חום */
+    margin-top: 20px;
+}
+
+.app-button {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #C19A6B; /* גוני בז חום */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #A57C4D; /* גוון כהה יותר */
+    transform: scale(1.05); /* הגדלה קלה בעת ריחוף */
+}

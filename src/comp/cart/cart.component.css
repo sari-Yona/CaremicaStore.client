@@ -1,0 +1,84 @@
+.red{
+    background-color: red;
+}
+
+
+.container {
+    background-color: #F5F5F5; /* צבע רקע בהיר */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #5B3A29; /* גוני בז חום */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table {
+    background-color: #FFFFFF; /* צבע לבן לשולחן */
+    border-radius: 8px;
+    overflow: hidden; /* פינות מעוגלות */
+}
+
+.table thead {
+    background-color: #C19A6B; /* גוני בז חום */
+    color: white;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #E8E8E8; /* צבע רקע בעת ריחוף */
+}
+
+.table tbody td {
+    cursor: pointer; /* מצביע על כך שהשדה ניתן ללחיצה */
+}
+
+.table tbody td:hover {
+    background-color: #D1D1D1; /* צבע רקע בעת ריחוף על תאים */
+}
+
+h3 {
+    color: #4A4A4A; /* צבע כהה יותר */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #C19A6B; /* גוני בז חום */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #A57C4D; /* גוון כהה יותר */
+    transform: scale(1.05); /* הגדלה קלה בעת ריחוף */
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F2F2F2; /* צבע רקע לשורות אי זוגיות */
+}
+.price{
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.err{
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}

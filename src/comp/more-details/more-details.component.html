@@ -1,0 +1,20 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img [src]="product.picture+'.jpg'" class="card-img-top" alt="{{ product.nameProduct }}" />
+        </div>
+        <div class="col-md-6">
+            <h2 class="display-4">{{ product.nameProduct }}</h2>
+            <p class="lead">{{ product.description }}</p>
+            <p class="text-muted"><strong>Price:</strong> {{ product.price |price}}</p>
+            <p class="text-muted"><strong>Category:</strong> {{ product.nameCategory }}</p>
+            <p class="text-muted"><strong>Company:</strong> {{ product.nameCompany }}</p>
+            <button [productId]="product.id" class="btn btn-secondary mt-2 fa-solid fa-solid fa-cart-plus "
+                (click)="addToCart(product)" appAddToCart>Add to Cart</button>
+                    
+            <app-button text="Back" icon="fa-solid fa-backspace" css="btn btn-secondary mt-2 fa-solid "
+                (event)="back($event)"></app-button>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>

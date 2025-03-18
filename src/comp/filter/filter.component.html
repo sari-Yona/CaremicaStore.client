@@ -1,0 +1,33 @@
+<div class="filter-component card p-3">
+    <h5 class="card-title">Product Filter</h5>
+    <div class="mb-3">
+        <label for="category" class="form-label">Category:</label>
+        <select id="category" class="form-select" [(ngModel)]="fo.categoryId">
+            @for(category of this.f.categories; track category.id){
+            <option [value]="category.id">{{ category.nameCategory }}</option>}
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="company" class="form-label">Company:</label>
+        <select id="company" class="form-select" [(ngModel)]="fo.companyId">
+            @for(company of this.f.companies; track company.id){
+            <option [value]="company.id">{{ company.nameCompany }}</option>}
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="min-price" class="form-label">Minimum Price:</label>
+        <input type="number" id="min-price" class="form-control" [(ngModel)]="fo.minPrice" />
+    </div>
+
+    <div class="mb-3">
+        <label for="max-price" class="form-label">Maximum Price:</label>
+        <input type="number" id="max-price" class="form-control" [(ngModel)]="fo.maxPrice" />
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <app-button  text="Apply" icon="fa-solid fa-angle-right" css="btn btn-secondary mt-2" (event)="filter($event)"></app-button>
+        <app-button text="Cancel Filter" icon="fa-solid fa-times-circle" css="btn btn-secondary" (event)="cancelFilter($event)"></app-button>
+    </div>
+</div>

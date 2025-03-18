@@ -1,0 +1,58 @@
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 15px; /* קצוות רכים */
+    overflow: hidden; /* להסתיר תכנים החורגים מהכרטיס */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* הצללה יותר מודרנית */
+}
+
+.in-stock {
+    border-left: 5px solid #b29a7c;
+}
+
+.out-of-stock {
+    border-left: 5px solid #b29a7c;
+    opacity: 50%; 
+    pointer-events: none; /* מונע לחיצות על הכפתור */
+}
+
+.btn-dark {
+    background-color: #343a40; /* Dark color */
+    color: #fff;
+    border-radius: 20px; /* קצוות רכים לכפתורים */
+}
+
+.btn-dark:hover {
+    background-color: #495057; /* Darker on hover */
+}
+
+/* הוספת עיצוב למרווחים */
+.row {
+    margin-bottom: 20px; /* מרווח בין שורות */
+}
+
+.card-body {
+    padding: 20px; /* מרווח פנימי נוסף בכרטיס */
+}
+
+img {
+    padding: 10px; /* מרווח פנימי נוסף בתמונה */
+}
+
+#btns {
+    background-color: #A86B4D;
+    border-color: #A86B4D;
+    margin: 15px;
+    left: 0;
+}
+
+/* שינוי פונט לכפתורים */
+.custom-button {
+    font-family: 'Arial', sans-serif; /* ניתן לשנות לפונט אחר */
+    font-weight: bold; /* משקל הפונט */
+    font-size: 16px; /* גודל הפונט */
+}

@@ -1,0 +1,56 @@
+.container {
+    background-color: #F5E7D7; /* שמנת */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    align-items: center; /* מרכז את התוכן */
+}
+
+.display-4 {
+    color: #5B3A29; /* גוני בז חום */
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #4A4A4A; /* צבע כהה יותר */
+}
+
+.text-muted {
+    color: #6C757D; /* צבע אפור */
+}
+
+.btn-primary {
+    background-color: #C19A6B; /* גוני בז חום */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover { 
+    background-color: #A57C4D; /* גוון כהה יותר */
+    transform: scale(1.05); /* הגדלה קלה בעת ריחוף */
+}
+
+hr.my-4 {
+    border-top: 2px solid #C19A6B; /* גוני בז חום */
+    margin: 20px 0;
+}
+
+.card-img-top {
+    width: 100%; /* שומר על התמונה בגובה ובאורך הנכון */
+    height: auto; /* שומר על יחס התמונה */
+    border-radius: 8px; /* פינות מעוגלות לתמונה */
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05); /* הגדלה קלה של התמונה בעת ריחוף */
+}
+
+.button-spacing {
+    margin-bottom: 5px; /* או כל ערך שתרצה */
+    margin-bottom: 10px; /* רווח בין הכפתורים */
+}
