@@ -64,14 +64,15 @@ Ensure you have the following installed:
    ```cd new-angular-project
 3. Install dependencies:
   ```npm install```
-
+---
 ### Running the Application
-  1. Start the development server:
+  1. **Start the development server:**
     ```ng serve -o```
 This will open the application in your default browser at http://localhost:4200/.
 
-2. Build the project for production:
+2. **Build the project for production:**
    ```ng build --prod```
+---
 ###Project Structure
 new-angular-project/
 ├── src/
@@ -89,26 +90,27 @@ new-angular-project/
 ├── angular.json            # Angular CLI configuration
 ├── package.json            # Node.js dependencies and scripts
 ├── README.md               # Project documentation
-
-Contributing
-Contributions are welcome! To contribute:
+---
+##Contributing
+**Contributions are welcome! To contribute:**
 
 Fork the repository.
-Create a new branch:
+**Create a new branch:**
 ```git checkout -b feature/your-feature-name```
 Commit your changes:
 ```git commit -m "Add your message here"```
 Push to the branch:
 ```git push origin feature/your-feature-name```
 Open a pull request.
-License
+---
+###License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
+---
+###Contact
 For any inquiries or feedback, please contact:
 
-Email: sari100375@gmail.com
-Phone: 0534100375
+**Email:** sari100375@gmail.com
+**Phone:** 0534100375
 Thank you for using my Angular Project! I hope you enjoy working with it.
 
 
