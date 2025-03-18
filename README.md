@@ -73,24 +73,6 @@ This will open the application in your default browser at http://localhost:4200/
 2. **Build the project for production:**
    ```ng build --prod```
 ---
-###Project Structure
-new-angular-project/
-├── src/
-│   ├── app/                # Main application folder
-│   │   ├── components/     # Reusable components
-│   │   ├── services/       # Application services
-│   │   ├── models/         # Data models
-│   │   ├── app.module.ts   # Main module
-│   │   ├── app.component.* # Root component
-│   ├── assets/             # Static assets (images, styles, etc.)
-│   ├── environments/       # Environment-specific configurations
-│   ├── index.html          # Main HTML file
-│   ├── styles.css          # Global styles
-├── .gitignore              # Git ignore file
-├── angular.json            # Angular CLI configuration
-├── package.json            # Node.js dependencies and scripts
-├── README.md               # Project documentation
----
 ##Contributing
 **Contributions are welcome! To contribute:**
 
@@ -107,7 +89,7 @@ Open a pull request.
 This project is licensed under the MIT License. See the LICENSE file for details.
 ---
 ###Contact
-For any inquiries or feedback, please contact:
+**For any inquiries or feedback, please contact:**
 
 **Email:** sari100375@gmail.com
 **Phone:** 0534100375
